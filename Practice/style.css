@@ -1,0 +1,74 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ed9191;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the form */
+form {
+    background-color: #7279fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(19, 13, 13, 0.1);
+    width: 320px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+}
+
+/* Table row styling */
+tr {
+    margin-bottom: 10px;
+}
+
+/* Table cell styling */
+td {
+    padding: 8px;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #f69595;
+    border-radius: 4px;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #7ab7f8;
+    color: rgb(247, 158, 158);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #183beb;
+}

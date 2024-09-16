@@ -1,0 +1,231 @@
+/* Reset default styles
+body, h1, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Space Mono', monospace;
+    color: #fff;
+    background: #000;
+  }
+  
+  #fh5co-header {
+    position: relative;
+    color: #fff;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile-thumb {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border: 5px solid #fff;
+  }
+  
+  .name {
+    font-size: 50px;
+    color: blue;
+  }
+  
+  .intro {
+    font-size: 19px;
+  }
+  
+  .highlight-green {
+    color: green;
+  }
+  
+  .highlight-yellow {
+    color: yellow;
+  }
+  
+  .highlight-red {
+    color: #7C0600;
+  }
+  
+  .highlight-blue {
+    color: blue;
+  }
+  
+  .highlight-orange {
+    color: #FF9000;
+  }
+  
+  .highlight-skyblue {
+    color: skyblue;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .interactive {
+    margin-top: 20px;
+  }
+  
+  .btn-outline-secondary {
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+  }
+  
+  .btn-outline-secondary:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  #fh5co-about {
+    background: #111;
+    padding: 50px 0;
+  }
+  
+  #fh5co-about h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .info li {
+    margin-bottom: 10px;
+  }
+  
+  .info .first-block {
+    font-weight: bold;
+    color: #FF9000;
+  }
+  
+  .info .second-block {
+    color: #22f549;
+  }
+  
+  .btn-primary {
+    background-color: #FF9000;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e68900;
+  }
+  
+  #fh5co-footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  #fh5co-footer p {
+    margin: 0;
+  }
+  
+  #fh5co-footer a {
+    color: #FF9000;
+  }
+  
+  #fh5co-footer a:hover {
+    color: #fff;
+  }
+   */
+/* Reset default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero .profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #ff9900;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004080;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+}
+
+ 
+ 

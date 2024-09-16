@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar{
+  background-color: red;
+  width: 20vw;
+  height: 100vh;
+}
+
+.sidebar nav{
+  padding: 45px;
+}
+
+.sidebar nav li{
+  list-style: none;
+  font-size: 30px;
+  padding: 33px 0;
+}
+
+li:hover{
+  color: green;
+}
+
+.main{
+  background-color: yellow;
+  width:80vw ;
+}
+
+.container{
+  display: flex;
+}
+
+.info-container{
+  background-color:rgb(211, 37, 168);
+  height: 45vw;
+  width: advw;
+}
+

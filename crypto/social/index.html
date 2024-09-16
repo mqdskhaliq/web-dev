@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="selector">
+        <div id="selectField">
+          <p id="selectText">Select Social Media</p>
+          <img id="arrowIcon" src="images/arrow.png" onclick="">
+        </div>
+        <ul id="list">
+          <li class="options">
+            <img src="images/youtube.png" alt="YouTube">
+            <p>YouTube</p>
+          </li>
+          <li class="options">
+            <img src="images/instagram.png" alt="Instagram">
+            <p>Instagram</p>
+          </li>
+          <li class="options">
+            <img src="images/twitter.png" alt="Twitter">
+            <p>Twitter</p>
+          </li>
+          <li class="options">
+            <img src="images/pinterest.png" alt="Pinterest">
+            <p>Pinterest</p>
+          </li>
+          <li class="options">
+            <img src="images/whatsapp.png" alt="WhatsApp">
+            <p>WhatsApp</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Select Box</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hero">
+    <div class="custom-select">
+        <div class="select-box" id="selectBox">
+            <p id="selectText">Select an option</p>
+            <img id="arrowIcon" src="images/arrow.png" alt="Arrow Icon">
+        </div>
+        <ul id="optionsList" class="hide">
+            <li class="option" data-value="1">
+                <img src="images/youtube.png" alt="YouTube">
+                <p>YouTube</p>
+            </li>
+            <li class="option" data-value="2">
+                <img src="images/instagram.png" alt="Instagram">
+                <p>Instagram</p>
+            </li>
+            <li class="option" data-value="3">
+                <img src="images/twitter.png" alt="Twitter">
+                <p>Twitter</p>
+            </li>
+            <li class="option" data-value="4">
+                <img src="images/pinterest.png" alt="Pinterest">
+                <p>Pinterest</p>
+            </li>
+            <li class="option" data-value="5">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+                <p>WhatsApp</p>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <script>
+  
+
+document.addEventListener("DOMContentLoaded", function() {
+    const selectBox = document.getElementById("selectBox");
+    const selectText = document.getElementById("selectText");
+    const optionsList = document.getElementById("optionsList");
+    const arrowIcon = document.getElementById("arrowIcon");
+    const options = document.querySelectorAll(".option");
+
+
+    selectBox.addEventListener("click", function() {
+        optionsList.classList.toggle("hide");
+        arrowIcon.classList.toggle("rotate");
+    });
+
+   
+    options.forEach(function(option) {
+        option.addEventListener("click", function() {
+            const text = this.querySelector("p").textContent;
+            selectText.textContent = text;
+
+          
+            optionsList.classList.add("hide");
+            arrowIcon.classList.remove("rotate");
+        });
+    });
+
+  
+    document.addEventListener("click", function(event) {
+        if (!selectBox.contains(event.target)) {
+            optionsList.classList.add("hide");
+            arrowIcon.classList.remove("rotate");
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

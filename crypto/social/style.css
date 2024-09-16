@@ -1,0 +1,125 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#f44336, #730228);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+/*
+.selector {
+    width: 350px;
+}
+
+#selectField {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#selectField img {
+    width: 12px;
+    transition: transform 0.5s;
+}
+
+#list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    background: #fff;
+    position: absolute; 
+    z-index: 1000;
+}
+
+#list.hide {
+    display: none;
+}
+
+
+ #selectField {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}  */
+
+/* style.css */
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+
+}
+
+.select-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+}
+
+#arrowIcon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+#optionsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.hide {
+    display: none;
+}
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
